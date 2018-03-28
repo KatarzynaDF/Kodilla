@@ -1,19 +1,57 @@
 package com.kodilla.testing.collection;
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+
+import java.util.ArrayList;
 
 public class OddNumbersExterminator {
 
-    public ArrayList<Integer> getEvenNumbers(ArrayList<Integer> numbers) {
-        ArrayList<Integer> evenNumbers = new ArrayList<>();
+    private int number1;
+    private int number2;
+    private int number3;
 
-        for (int number : numbers) {
-            if (number % 2 == 0) {
-                evenNumbers.add(number);
-            }
+    public int getNumber1() {
+        return number1;
+    }
+
+    public int getNumber2() {
+        return number2;
+    }
+
+    public int getNumber3() {
+        return number3;
+    }
+
+    public OddNumbersExterminator(int number1, int number2, int number3) {
+        this.number1 = number1;
+        this.number2 = number2;
+        this.number3 = number3;
+    }
+
+    public void exterminate() {
+
+        ArrayList<Integer> numbers = new ArrayList<Integer>();
+        numbers.add(number1);
+        numbers.add(number2);
+        numbers.add(number3);
+        boolean empty = numbers.isEmpty();
+
+        System.out.println(numbers);
+
+        ArrayList<Integer> numbers2 = new ArrayList<Integer>();
+
+        if (number1 % 2 == 0) {
+            numbers2.add(number1);
+        }
+        if (number2 % 2 == 0) {
+            numbers2.add(number2);
+        }
+        if (number3 % 2 == 0) {
+            numbers2.add(number3);
         }
 
-        return evenNumbers;
+        System.out.println(numbers2);
     }
+
 }
+
+
+
