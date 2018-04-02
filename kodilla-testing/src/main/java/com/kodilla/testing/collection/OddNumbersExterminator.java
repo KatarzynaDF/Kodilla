@@ -26,7 +26,7 @@ public class OddNumbersExterminator {
         this.number3 = number3;
     }
 
-    public void exterminate() {
+    public ArrayList<Integer> exterminate() {
 
         ArrayList<Integer> numbers = new ArrayList<Integer>();
         numbers.add(number1);
@@ -35,6 +35,11 @@ public class OddNumbersExterminator {
         boolean empty = numbers.isEmpty();
 
         System.out.println(numbers);
+
+        return numbers;
+    }
+
+    public ArrayList<Integer> exterminateEven(){
 
         ArrayList<Integer> numbers2 = new ArrayList<Integer>();
 
@@ -49,6 +54,9 @@ public class OddNumbersExterminator {
         }
 
         System.out.println(numbers2);
+
+        return numbers2;
+
     }
 
 }

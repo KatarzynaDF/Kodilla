@@ -1,5 +1,8 @@
 package com.kodilla.testing.collection;
+
 import org.junit.*;
+
+import java.util.ArrayList;
 
 
 public class CollectionTestSuite {
@@ -31,22 +34,30 @@ public class CollectionTestSuite {
         oddNumbersExterminator.exterminate();
         int number1 = oddNumbersExterminator.getNumber1();
         int number2 = oddNumbersExterminator.getNumber2();
+        int number3 = oddNumbersExterminator.getNumber3();
 
         //Then
+        Assert.assertEquals(4, number1);
         System.out.println("Twoja lista nie jest pusta!");
     }
 
     @Test
-    public void testCaseRealName() {
+    public void testOddNumbersExterminatorNormalList() {
         //Given
-        OddNumbersExterminator oddNumbersExterminator1 = new OddNumbersExterminator(4, 6, 9);
+        OddNumbersExterminator oddNumbersExterminator1 = new OddNumbersExterminator(4, 6, 3);
         //When
-        oddNumbersExterminator1.exterminate();
+        ArrayList<Integer> result =oddNumbersExterminator1.exterminateEven();
+        ArrayList<Integer> even = new ArrayList<>();
+        even.add(4);
+        even.add(6);
+
+
         int number1 = oddNumbersExterminator1.getNumber1();
         int number2 = oddNumbersExterminator1.getNumber2();
         int number3 = oddNumbersExterminator1.getNumber3();
 
         //Then
+        Assert.assertEquals(even, result);
         System.out.println("Twoja lista zawiera tylko liczby parzyste");
     }
 }
