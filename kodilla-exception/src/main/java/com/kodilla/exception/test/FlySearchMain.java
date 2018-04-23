@@ -1,11 +1,12 @@
 package com.kodilla.exception.test;
 
-public class ExceptionHandling {
-
+class FlySearchMain {
     public static void main(java.lang.String[] args) throws Exception {
-        SecondChallenge secondChallenge = new SecondChallenge();
+
+        Flight flight1 = new Flight("blabla", "Manila");
+        FlySearch flySearch1 = new FlySearch();
         try {
-            secondChallenge.probablyIWillThrowException(3, 0);
+            flySearch1.flySearch(flight1);
         } catch (Exception e) {
             System.out.println("Coś poszło nie tak");
         } finally {
@@ -14,4 +15,5 @@ public class ExceptionHandling {
         }
     }
 }
+
 
