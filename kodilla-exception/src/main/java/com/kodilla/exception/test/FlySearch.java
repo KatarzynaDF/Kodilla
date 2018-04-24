@@ -13,10 +13,9 @@ final class FlySearch {
         flyMap.put("Nowy Jork", true);
         flyMap.put("Boston", false);
 
-        if (flyMap.containsKey(flight.getArrivalAirport())) {
+        if (flyMap.containsKey(flight.getDepartureAirport())) {
 
-            System.out.println(flyMap.get("Checking.." + "Arrival airport" + flight.getArrivalAirport()) + " Departure airport"
-                    + flight.getDepartureAirport() + "Exists" + flyMap);
+            System.out.println("Looking for your airport.." + flyMap.get(flight.getArrivalAirport()) + flyMap);
 
         } else {
             throw new RouteNotFoundException();
