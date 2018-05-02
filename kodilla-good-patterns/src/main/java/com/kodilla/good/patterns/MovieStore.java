@@ -4,12 +4,12 @@ import java.util.*;
 
 class MovieStore {
 
-
     public static Map<String, List<String>> getMovies() {
 
         List<String> ironManTranslations = new ArrayList<>();
         ironManTranslations.add("Żelazny Człowiek");
         ironManTranslations.add("Iron Man");
+
 
         List<String> avengersTranslations = new ArrayList<>();
         avengersTranslations.add("Mściciele");
@@ -24,21 +24,6 @@ class MovieStore {
         booksTitlesWithTranslations.put("AV", avengersTranslations);
         booksTitlesWithTranslations.put("FL", flashTranslations);
 
-        List<String> titleList = new ArrayList<>();
-        for (String item:ironManTranslations){
-
-            titleList.add(item + "!");
-        }
-        for (String item:avengersTranslations){
-
-            titleList.add(item + "!");
-        }
-        for (String item:flashTranslations){
-
-            titleList.add(item + "!");
-        }
-
-        System.out.println(titleList);
         return booksTitlesWithTranslations;
     }
 }
