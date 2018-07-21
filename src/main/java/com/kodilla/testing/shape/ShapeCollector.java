@@ -19,7 +19,6 @@ public class ShapeCollector {
         list.remove(new Circle(shape.getName(),shape.getField()));
         list.remove(new Triangle(shape.getName(),shape.getField()));
         list.remove(new Square(shape.getName(),shape.getField()));
-
         return shape;
     }
 

@@ -28,15 +28,15 @@ public class OddNumbersExterminator {
 
     public ArrayList<Integer> exterminate() {
 
-        ArrayList<Integer> numbersInteger = new ArrayList<Integer>();
-        numbersInteger.add(number1);
-        numbersInteger.add(number2);
-        numbersInteger.add(number3);
-        boolean empty = numbersInteger.isEmpty();
+        ArrayList<Integer> numbersIntegerList = new ArrayList<Integer>();
+        numbersIntegerList.add(number1);
+        numbersIntegerList.add(number2);
+        numbersIntegerList.add(number3);
+        boolean empty = numbersIntegerList.isEmpty();
 
-        System.out.println(numbersInteger);
+        System.out.println(numbersIntegerList);
 
-        return numbersInteger;
+        return numbersIntegerList;
     }
 
     public ArrayList<Integer> exterminateEven(){

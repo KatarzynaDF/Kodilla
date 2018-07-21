@@ -26,12 +26,13 @@ public class ForumUser {
         comments.add(theComment);
     }
 
-    public int getPostsQuantity() {
-        return posts.size();
-    }
 
     public int getCommentsQuantity() {
         return comments.size();
+    }
+
+    public int getPostsQuantity() {
+        return posts.size();
     }
 
     public ForumPost getPost(int postNumber) {

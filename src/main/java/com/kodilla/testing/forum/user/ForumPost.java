@@ -10,13 +10,14 @@ public class ForumPost {
         this.author = author;
     }
 
+    public String getAuthor() {
+        return author;
+    }
+
     public String getPostBody() {
         return postBody;
     }
 
-    public String getAuthor() {
-        return author;
-    }
 
     @Override
     public boolean equals(Object o) {

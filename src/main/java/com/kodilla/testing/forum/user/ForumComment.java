@@ -2,9 +2,9 @@ package com.kodilla.testing.forum.user;
 
 public class ForumComment {
 
-   private ForumPost forumPost;
-   private String commentBody;
-   private String author;
+    private ForumPost forumPost;
+    private String commentBody;
+    private String author;
 
     public ForumComment(ForumPost forumPost, String commentBody, String author) {
         this.forumPost = forumPost;
@@ -16,12 +16,14 @@ public class ForumComment {
         return forumPost;
     }
 
-    public String getCommentBody() {
-        return commentBody;
-    }
 
     public String getAuthor() {
         return author;
+    }
+
+
+    public String getCommentBody() {
+        return commentBody;
     }
 
     @Override

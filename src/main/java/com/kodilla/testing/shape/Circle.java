@@ -3,8 +3,8 @@ package com.kodilla.testing.shape;
 import java.util.Objects;
 
 public class Circle implements Shape {
-    private String name;
     private int field;
+    private String name;
 
 
     public String getName() {
