@@ -12,13 +12,14 @@ public class ForumComment {
         this.author = author;
     }
 
-    public ForumPost getForumPost() {
-        return forumPost;
-    }
-
 
     public String getAuthor() {
         return author;
+    }
+
+
+    public ForumPost getForumPost() {
+        return forumPost;
     }
 
 

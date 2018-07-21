@@ -1,5 +1,4 @@
 package com.kodilla.testing.shape;
-
 import java.util.LinkedList;
 
 public class ShapeCollector {

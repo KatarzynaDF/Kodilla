@@ -33,7 +33,6 @@ public class OddNumbersExterminator {
         numbersIntegerList.add(number2);
         numbersIntegerList.add(number3);
         boolean empty = numbersIntegerList.isEmpty();
-
         System.out.println(numbersIntegerList);
 
         return numbersIntegerList;

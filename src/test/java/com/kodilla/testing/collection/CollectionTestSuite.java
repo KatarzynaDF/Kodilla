@@ -57,6 +57,6 @@ public class CollectionTestSuite {
 
         //Then
         Assert.assertEquals(even, result);
-        System.out.println("Twoja lista zawiera tylko liczby parzyste!!");
+        System.out.println("Twoja lista zawiera tylko liczby parzyste!!!");
     }
 }

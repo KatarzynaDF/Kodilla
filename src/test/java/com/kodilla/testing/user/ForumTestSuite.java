@@ -1,5 +1,4 @@
 package com.kodilla.testing.user;
-
 import com.kodilla.testing.forum.user.ForumComment;
 import com.kodilla.testing.forum.user.ForumPost;
 import com.kodilla.testing.forum.user.ForumUser;

@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class ForumUser {
-
     private String name;
     private String realName;
     private ArrayList<ForumPost> posts = new ArrayList<ForumPost>();
