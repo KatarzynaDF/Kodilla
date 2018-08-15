@@ -17,6 +17,6 @@ public class ArrayOperationsTestSuite {
         OptionalDouble optionalDouble = OptionalDouble.of(9.5);
         // Then
         Assert.assertEquals(optionalDouble, result);
-
-    }
+        System.out.println(result);
+        System.out.println(optionalDouble);
 }
